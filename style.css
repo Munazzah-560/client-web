@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.navbar{
+    z-index: 1;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right,#27a0b0,#ff9f8e);
+}
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 630px;
+    height: 580px;
+    position: absolute;
+    top: 20%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+.kinds>img{
+     width: 80px;
+     box-sizing: border-box;
+}
+.kinds{
+    position: absolute;
+    display: flex;
+}
+.zong{
+    position: absolute;
+    top: 450px;
+    left: 265px;
+    transform: rotate(-270deg);
+    
+}
+.tel{
+    position: absolute;
+    top: 40px;
+    left: 285px;
+    transform: rotate(-90deg);
+}
+.warid{
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+.mobi{
+    position: absolute;
+    top: 290px;
+    left: 490px;
+}
+.mobile{
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.control{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.control>h4{
+   margin: 10px 0;
+   color: #fff;
+}
+#up{
+    width: 25px;
+    cursor: pointer;
+}
+#down{
+    width: 25px;
+    cursor: pointer;
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid  transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 608px) {
+    .information {
+        width: 90%;
+        height: auto;
+        top: 55;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #circle {
+        width: 200px;
+        height: auto;
+        top: 20%;
+    }
+
+    .kinds > img {
+        width: 50px; 
+    }
+
+    .kinds {
+        flex-direction: column;
+        position: relative;
+        top: 50%;
+        left: 60%;
+        transform: translateX(-50%);
+    }
+
+    .zong {
+        transform: rotate(0deg);
+        position: absolute;
+        top: 2px;
+        left: 140px;
+    }
+
+    .tel {
+        transform: rotate(180deg);
+        position: absolute;
+        top:20%;
+        left: -70px;
+    }
+
+    .warid {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: -130px;
+        left: 50px;
+    }
+
+    .mobi {
+        transform: rotate(90deg);
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+
+    .mobile {
+        width: 150px;
+        height: 150px;
+        left: 7px;
+    }
+
+    .control {
+        right: 13%;
+        top: 50%;
+    }
+
+    #up, #down {
+        width: 35px;
+    }
+
+    .overlay {
+        display: none;
+    }
+}
+.card{
+    margin: 40px;
+}
+/* .card-group{
+    display: none;
+} */
+
+.card>img{
+    width: 320px;
+    height: 300px;
+    cursor: pointer;
+}
+.charger>img{
+    width: 270px;
+    margin: 20px;
+}
+.container{
+    display: flex;
+    background: linear-gradient(#27a0b0,#ff9f8e);
+    justify-content: center;
+    margin: 60px;
+    flex-wrap: nowrap;
+}
+.avail>img{
+    width: 230px;
+    height: 140px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.avail{
+    background: #fff;
+    margin: 10px;
+    border-radius: 20px;
+}
+.avail:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all ease-in-out;
+}
+@media screen and (max-width: 608px) {
+    .avail>img{margin: auto;
+     width:230px ;
+     padding: auto;
+}
+.container{
+    flex-wrap: wrap;
+}
+.charger{
+    padding: auto;
+    margin: auto;
+}
+}
+.container{
+    margin: 80px;
+    color: rgb(153, 51, 51);
+}
+.end{
+    text-decoration: none;
+}
+
+.contact-info-container {
+    width: 45%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.contact-info-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info-container li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-info-container>p{
+    color: #555;
+}
+.map-container {
+    margin-top: 40px;
+}
+
+.map iframe {
+    border: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-info-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+
